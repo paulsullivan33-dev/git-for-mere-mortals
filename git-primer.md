@@ -155,6 +155,21 @@ git reset --hard origin/main   # put main back where GitHub has it
 (The `--hard` here is safe *only* because your commit is now safe on
 the new branch.)
 
+### I merged a PR on GitHub and deleted the branch, but my computer still shows it
+```bash
+git checkout main
+git fetch --prune          # refresh your list of GitHub's branches
+git branch -d branch-name  # delete your local copy of the branch
+```
+Why: your computer keeps its own list of GitHub's branches, and it
+doesn't learn about deletions until you fetch with `--prune`. VS Code
+reads that stale list, which is why it shows errors.
+
+Make it automatic so you never think about it again:
+```bash
+git config --global fetch.prune true
+```
+
 ## Golden rules
 
 1. **Pull before you push.** Gets you the latest and avoids most conflicts.
