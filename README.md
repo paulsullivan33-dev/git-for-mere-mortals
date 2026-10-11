@@ -24,3 +24,8 @@ pick up the other two as needed.
 
 The cookbook in the git primer grows from real messes. Hit a confusing
 git situation at work? That's the next entry.
+
+## Writing criteria
+
+Every guide follows the same [writing criteria](criteria.md): plain
+words, no hype, honest limits, and checkable steps.
