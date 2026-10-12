@@ -17,12 +17,18 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.x"
-      - name: Stage markdown into docs/
+      - name: Stage markdown and assets into docs/
         run: |
           mkdir -p docs
           cp *.md docs/
-          rm docs/README.md
+          rm -f docs/README.md
           cp README.md docs/index.md
+          for d in */; do
+            case "$d" in
+              .github/|docs/|site/) ;;
+              *) cp -r "$d" docs/ ;;
+            esac
+          done
       - run: pip install mkdocs-material
       - run: mkdocs build --strict
       - uses: actions/upload-pages-artifact@v3
