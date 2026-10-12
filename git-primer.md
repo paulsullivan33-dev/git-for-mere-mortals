@@ -49,6 +49,18 @@ know who made them.
 
 The daily rhythm is: `pull` → work → `add` → `commit` → `push`.
 
+### Where am I? (which repo, which branch)
+
+```bash
+git remote -v              # which repo this folder is connected to
+git branch --show-current  # which branch you have checked out
+```
+
+`git remote -v` prints the GitHub address, e.g.
+`https://github.com/paulsullivan33-dev/bash-for-mere-mortals.git` —
+the `owner/repo` part is the repo's full name. Handy when you have
+several clones and can't tell which folder is which.
+
 ## Branches: the slightly bigger idea
 
 A **branch** is just a label stuck on a save point. `main` is the
