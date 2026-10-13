@@ -10,6 +10,7 @@ theme:
 nav:
   - Home: index.md
   - Git Primer: git-primer.md
+  - GitHub CLI Primer: gh-primer.md
   - GitHub Actions Primer: github-actions-primer.md
   - GitOps Vocabulary: gitops-vocabulary.md
   - Writing Criteria: criteria.md

@@ -11,6 +11,7 @@ starts with the *idea*, then the commands.
 | File | What it is |
 |---|---|
 | [git-primer.md](git-primer.md) | Daily git reference: the save-point mental model, the 7 commands you'll use every day, branches, and a cookbook of real situations (undoing mistakes, merge conflicts, stashing, cleaning up deleted branches). |
+| [gh-primer.md](gh-primer.md) | GitHub CLI in plain language: the GitHub website in your terminal — repos, issues, pull requests, Actions runs, and the `gh api` escape hatch. Complements git; replaces the browser tab. |
 | [github-actions-primer.md](github-actions-primer.md) | GitHub Actions in plain language: workflows, events, jobs, steps, secrets, and self-hosted runners on Linux and Windows — from the trigger firing to the runner finishing the job. |
 | [gitops-vocabulary.md](gitops-vocabulary.md) | GitOps vocabulary companion: what repo, PR, pipeline, CI/CD, drift, and rollback mean when "the repo is the truth about what should be running." |
 
@@ -18,7 +19,7 @@ starts with the *idea*, then the commands.
 
 Anyone who was told "we're doing GitOps now" and needs to get productive
 without a computer science lecture first. Start with the git primer, then
-pick up the other two as needed.
+pick up the others as needed.
 
 ## Contributing situations
 
