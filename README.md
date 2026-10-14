@@ -12,16 +12,16 @@ concept starts with the *idea*, then the commands.
 
 ## What this guide covers
 
-- **Git primer** — the save-point mental model, setup, the 7 commands
+- [**Git primer**](git-primer.md) — the save-point mental model, setup, the 7 commands
   you'll use every day, branches, and a cookbook of real situations:
   undoing mistakes, merge conflicts, stashing, cleaning up branches
   deleted on GitHub
-- **GitHub CLI primer** — the GitHub website in your terminal: repos,
+- [**GitHub CLI primer**](gh-primer.md) — the GitHub website in your terminal: repos,
   issues, pull requests, Actions runs, and the `gh api` escape hatch
-- **GitHub Actions primer** — workflows, events, jobs, steps, secrets,
+- [**GitHub Actions primer**](github-actions-primer.md) — workflows, events, jobs, steps, secrets,
   and self-hosted runners on Linux and Windows, from trigger to
   green check
-- **GitOps vocabulary** — what repo, PR, pipeline, CI/CD, drift, and
+- [**GitOps vocabulary**](gitops-vocabulary.md) — what repo, PR, pipeline, CI/CD, drift, and
   rollback mean when "the repo is the truth about what should be
   running"
 
