@@ -22,6 +22,9 @@ or a red X. That's the whole system.
 | **Action** | A pre-made recipe card. Instead of writing "install Python" yourself, you use someone's tested card: `actions/setup-python@v5`. |
 | **Runner** | The computer that does the work. Either GitHub's computer (hosted) or **your** computer (self-hosted). |
 
+These six words (plus a few more, like secret and pipeline) are
+collected in the [Glossary](glossary.md) for quick reference.
+
 ## How it works, end to end
 
 Follow one push all the way through:
@@ -243,3 +246,11 @@ works the same otherwise.
    few months) and treat them as trusted machines.
 6. Read the log from the bottom up. The error is at the end; the
    scrolling above it is just the journey.
+
+## Go deeper
+
+This primer covers the daily 90%. For the full treatment —
+expressions, contexts, environments, reusable workflows, OIDC, and
+starter workflows —
+[GitHub Actions for Mere Mortals](https://paulsullivan33-dev.github.io/github-actions-for-mere-mortals/)
+picks up where this leaves off.

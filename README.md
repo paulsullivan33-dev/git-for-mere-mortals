@@ -1,32 +1,61 @@
 # Git for Mere Mortals
 
-Plain-language references for learning git, GitHub, and GitOps — written
-for people learning it for work, not for people who already know it.
+Git is the save-point system underneath modern software work: every
+change a snapshot, every snapshot labeled, whole histories you can
+rewind. This guide collects four plain-language primers — the git
+you'll use every day, the GitHub CLI, GitHub Actions, and the GitOps
+vocabulary — written for people learning it for work, not for people
+who already know it.
 
-No jargon without an explanation. No "it's simple, just..." Every concept
-starts with the *idea*, then the commands.
+No jargon without an explanation. No "it's simple, just..." Every
+concept starts with the *idea*, then the commands.
 
-## What's here
+## What this guide covers
 
-| File | What it is |
-|---|---|
-| [git-primer.md](git-primer.md) | Daily git reference: the save-point mental model, the 7 commands you'll use every day, branches, and a cookbook of real situations (undoing mistakes, merge conflicts, stashing, cleaning up deleted branches). |
-| [gh-primer.md](gh-primer.md) | GitHub CLI in plain language: the GitHub website in your terminal — repos, issues, pull requests, Actions runs, and the `gh api` escape hatch. Complements git; replaces the browser tab. |
-| [github-actions-primer.md](github-actions-primer.md) | GitHub Actions in plain language: workflows, events, jobs, steps, secrets, and self-hosted runners on Linux and Windows — from the trigger firing to the runner finishing the job. |
-| [gitops-vocabulary.md](gitops-vocabulary.md) | GitOps vocabulary companion: what repo, PR, pipeline, CI/CD, drift, and rollback mean when "the repo is the truth about what should be running." |
+- **Git primer** — the save-point mental model, setup, the 7 commands
+  you'll use every day, branches, and a cookbook of real situations:
+  undoing mistakes, merge conflicts, stashing, cleaning up branches
+  deleted on GitHub
+- **GitHub CLI primer** — the GitHub website in your terminal: repos,
+  issues, pull requests, Actions runs, and the `gh api` escape hatch
+- **GitHub Actions primer** — workflows, events, jobs, steps, secrets,
+  and self-hosted runners on Linux and Windows, from trigger to
+  green check
+- **GitOps vocabulary** — what repo, PR, pipeline, CI/CD, drift, and
+  rollback mean when "the repo is the truth about what should be
+  running"
 
-## Who it's for
+## What it doesn't cover
 
-Anyone who was told "we're doing GitOps now" and needs to get productive
-without a computer science lecture first. Start with the git primer, then
-pick up the others as needed.
+Deep GitHub Actions (expressions, environments, reusable workflows)
+and the full GitOps practice — both have their own guides, linked
+under "Go deeper" below. This guide is the working vocabulary and
+daily reference, not the whole subject.
 
-## Contributing situations
+## How to use this guide
 
-The cookbook in the git primer grows from real messes. Hit a confusing
-git situation at work? That's the next entry.
+Start with the git primer, then pick up the others as needed. Every
+git command in the primer was run against real git before shipping;
+the GitHub CLI commands were checked against the real `gh`, with
+login-required output clearly marked. The cookbook grows from real
+messes — hit a confusing git situation at work? That's the next
+entry.
 
-## Writing criteria
+## Chapters
 
-Every guide follows the same [writing criteria](criteria.md): plain
-words, no hype, honest limits, and checkable steps.
+1. [Git Primer](git-primer.md)
+2. [GitHub CLI Primer](gh-primer.md)
+3. [GitHub Actions Primer](github-actions-primer.md)
+4. [GitOps Vocabulary](gitops-vocabulary.md)
+5. [Glossary](glossary.md)
+
+## Go deeper
+
+- [GitHub Actions for Mere Mortals](https://paulsullivan33-dev.github.io/github-actions-for-mere-mortals/) —
+  the full guide: expressions, contexts, environments, reusable
+  workflows, OIDC, starter workflows
+- [GitOps for Mere Mortals](https://paulsullivan33-dev.github.io/gitops-for-mere-mortals/) —
+  the full guide: the practice behind the vocabulary
+
+*Written to the [nine-point writing standard](criteria.md) shared by
+every guide in this series.*

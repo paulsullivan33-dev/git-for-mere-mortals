@@ -6,6 +6,19 @@ video game. You play (edit files), you hit a save point (`commit`), and
 you can always go back to any save point later. Everything else is
 details.
 
+## What this guide covers
+
+The daily git you need at work: the save-point mental model, setup,
+the commands you'll use every day, branches, and a cookbook of real
+situations — undoing mistakes, merge conflicts, stashing, and
+cleaning up branches.
+
+## What it doesn't cover
+
+The GitHub website chores (see the [GitHub CLI primer](gh-primer.md)),
+workflow automation (see the [GitHub Actions primer](github-actions-primer.md)),
+or the GitOps way of running systems (see the [GitOps vocabulary](gitops-vocabulary.md)).
+
 ## The big idea: three places
 
 Your files live in three places. Every git command just moves stuff
@@ -24,6 +37,39 @@ And then there's a fourth place that matters at work:
 
 That's the whole model. If a command confuses you, ask: "which two
 places is this moving things between?"
+
+## Installing git
+
+One command per platform (from [git-scm.com](https://git-scm.com/downloads);
+I didn't run these installers here, so that page is the source of truth):
+
+```bash
+# Windows (in PowerShell)
+winget install --id Git.Git
+
+# macOS
+brew install git
+
+# Debian / Ubuntu
+sudo apt install git
+
+# Fedora / Red Hat
+sudo dnf install git
+```
+
+**Check:**
+
+```bash
+git --version
+```
+
+```
+git version 2.43.0
+```
+
+(Yours will show whatever version your package manager gave you —
+anything recent works for this guide. This output is from the machine
+this guide was checked against.)
 
 ## One-time setup
 
@@ -57,7 +103,7 @@ git branch --show-current  # which branch you have checked out
 ```
 
 `git remote -v` prints the GitHub address, e.g.
-`https://github.com/paulsullivan33-dev/bash-for-mere-mortals.git` —
+`https://github.com/your-org/your-repo.git` —
 the `owner/repo` part is the repo's full name. Handy when you have
 several clones and can't tell which folder is which.
 
@@ -194,17 +240,8 @@ git config --global fetch.prune true
 5. **When in doubt, `git status`.** It tells you where you are and often
    suggests the next command.
 
-## Glossary in plain words
+## Words to know
 
-| Word | Means |
-|---|---|
-| **repository** (repo) | The project folder plus all its save points |
-| **commit** | One save point — a snapshot of your files plus a message |
-| **branch** | A movable label on a save point; `main` is the official one |
-| **remote** | The shared copy (GitHub). Nicknamed `origin` by default |
-| **clone** | Download a repo for the first time (`git clone <url>`) |
-| **merge** | Fold one branch's save points into another |
-| **conflict** | Git can't auto-combine two edits; a human decides |
-| **stash** | Temporarily shelve unfinished changes |
-| **fetch** | Ask GitHub "what's new?" without downloading files yet |
-| **HEAD** | "Where I am right now" (the current save point) |
+New to the vocabulary? Every term in this guide is collected in the
+[Glossary](glossary.md) — repository, commit, branch, remote, HEAD,
+and the rest, in plain words.

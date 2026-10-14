@@ -1,5 +1,10 @@
 # GitOps Vocabulary — plain-language companion
 
+Every term below is also collected in the
+[Glossary](glossary.md). This chapter adds the story: how the words
+fit together when "the repo is the truth about what should be
+running."
+
 ## The big idea (read this first)
 
 GitOps is a way of running systems with one rule: **the git repo is the
@@ -80,3 +85,9 @@ record of who asked for it, who approved it, and when it landed.
   polite fiction. GitOps only works if the back door is locked.
 - **Review PRs like they matter — because merging IS deploying.** That
   "looks fine" click can restart production. Read the diff.
+
+## Go deeper
+
+For the full GitOps picture — beyond vocabulary into the practice —
+[GitOps for Mere Mortals](https://paulsullivan33-dev.github.io/gitops-for-mere-mortals/)
+covers it in depth.

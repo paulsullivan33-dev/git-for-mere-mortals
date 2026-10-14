@@ -13,4 +13,5 @@ nav:
   - GitHub CLI Primer: gh-primer.md
   - GitHub Actions Primer: github-actions-primer.md
   - GitOps Vocabulary: gitops-vocabulary.md
+  - Glossary: glossary.md
   - Writing Criteria: criteria.md

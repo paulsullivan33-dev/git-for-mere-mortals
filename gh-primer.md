@@ -287,19 +287,9 @@ gh issue view 12 -R owner/repo
 
 ## Words to know
 
-- **Token** — a long secret string that proves it's you, used instead
-  of your password. `gh` stores yours in the OS credential vault.
-- **Scope** — what a token is allowed to do (read repos, write PRs,
-  …). `gh auth login -s <scope>` requests extras when something
-  needs more permission than the default.
-- **Issue** — a to-do item on a repo: bug report, feature request,
-  question.
-- **Pull request (PR)** — a proposal to fold one branch's save points
-  into another, with review and automated checks.
-- **Workflow run** — one execution of a GitHub Actions workflow.
-  `gh run watch` follows it live.
-- **Release** — a packaged version of a repo (`gh release list` /
-  `gh release view`). Often where installers and changelogs live.
+Every term in this guide — token, scope, issue, pull request,
+workflow run, release — is collected in the
+[Glossary](glossary.md), in plain words.
 
 ## Validation notes
 
