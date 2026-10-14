@@ -1,4 +1,4 @@
-# GitHub CLI Primer — the GitHub website in your terminal
+# GitHub CLI Primer (gh) — the GitHub website in your terminal
 
 `gh` is GitHub's official command-line tool. If the website is a
 building full of rooms (pull requests, issues, Actions runs, releases),

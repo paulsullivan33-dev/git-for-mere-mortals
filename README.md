@@ -16,7 +16,7 @@ concept starts with the *idea*, then the commands.
   you'll use every day, branches, and a cookbook of real situations:
   undoing mistakes, merge conflicts, stashing, cleaning up branches
   deleted on GitHub
-- [**GitHub CLI primer**](gh-primer.md) — the GitHub website in your terminal: repos,
+- [**GitHub CLI primer (gh)**](gh-primer.md) — the GitHub website in your terminal: repos,
   issues, pull requests, Actions runs, and the `gh api` escape hatch
 - [**GitHub Actions primer**](github-actions-primer.md) — workflows, events, jobs, steps, secrets,
   and self-hosted runners on Linux and Windows, from trigger to
@@ -44,7 +44,7 @@ entry.
 ## Chapters
 
 1. [Git Primer](git-primer.md)
-2. [GitHub CLI Primer](gh-primer.md)
+2. [GitHub CLI Primer (gh)](gh-primer.md)
 3. [GitHub Actions Primer](github-actions-primer.md)
 4. [GitOps Vocabulary](gitops-vocabulary.md)
 5. [Glossary](glossary.md)
